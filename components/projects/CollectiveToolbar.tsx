@@ -9,10 +9,15 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Filter, ArrowRight, Search } from "lucide-react";
-import Link from "next/link";
+import { Filter, Search, LayoutGrid, List } from "lucide-react";
 
-export function CollectiveToolbar() {
+export function CollectiveToolbar({
+  viewMode,
+  setViewMode,
+}: {
+  viewMode: "grid" | "list";
+  setViewMode: (mode: "grid" | "list") => void;
+}) {
   return (
     <div className="flex items-center gap-2 mb-6">
       {/* Search */}
@@ -52,17 +57,31 @@ export function CollectiveToolbar() {
         </SelectContent>
       </Select>
 
-      {/* Create CTA */}
-      <Button
-        asChild
-        size="sm"
-        className="h-9 bg-[#1b3a2d] hover:bg-[#152e24] text-white text-sm font-medium rounded-md ml-auto gap-1.5 px-5"
-      >
-        <Link href="/projects/create">
-          Create
-          <ArrowRight className="w-3.5 h-3.5" />
-        </Link>
-      </Button>
+      {/* View Toggles */}
+      <div className="flex bg-white border border-gray-200 rounded-md p-1 ml-auto">
+        <button
+          onClick={() => setViewMode("list")}
+          className={`p-1.5 rounded-sm transition-colors ${
+            viewMode === "list"
+              ? "bg-gray-100 text-gray-900 shadow-sm"
+              : "text-gray-400 hover:text-gray-600"
+          }`}
+          aria-label="List View"
+        >
+          <List className="w-4 h-4" />
+        </button>
+        <button
+          onClick={() => setViewMode("grid")}
+          className={`p-1.5 rounded-sm transition-colors ${
+            viewMode === "grid"
+              ? "bg-gray-100 text-gray-900 shadow-sm"
+              : "text-gray-400 hover:text-gray-600"
+          }`}
+          aria-label="Grid View"
+        >
+          <LayoutGrid className="w-4 h-4" />
+        </button>
+      </div>
     </div>
   );
 }
