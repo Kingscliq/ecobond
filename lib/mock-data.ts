@@ -32,7 +32,8 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
       { name: "Gloria Wafula", initials: "GW" },
       { name: "Fr.", initials: "FR" },
     ],
-    description: "The Oceanic Cleanup Init is dedicated to removing plastic pollution from the world's oceans. By developing advanced technologies and coordinating global volunteer efforts, we aim to restore marine ecosystems and protect ocean biodiversity for future generations."
+    description:
+      "The Oceanic Cleanup Init is dedicated to removing plastic pollution from the world's oceans. By developing advanced technologies and coordinating global volunteer efforts, we aim to restore marine ecosystems and protect ocean biodiversity for future generations.",
   },
   {
     id: "bitesize-capital",
@@ -45,10 +46,9 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
     visibility: "Public",
     paymentModel: "Free",
     effort: 65,
-    managers: [
-      { name: "Team Ecobond", initials: "TE" },
-    ],
-    description: "Solar Grid Innovators focuses on deploying scalable solar energy solutions across decentralized grids. Our mission is to provide clean, affordable, and reliable energy to communities, accelerating the transition away from fossil fuels."
+    managers: [{ name: "Team Ecobond", initials: "TE" }],
+    description:
+      "Solar Grid Innovators focuses on deploying scalable solar energy solutions across decentralized grids. Our mission is to provide clean, affordable, and reliable energy to communities, accelerating the transition away from fossil fuels.",
   },
   {
     id: "diaspora-house",
@@ -65,7 +65,8 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
       { name: "Joe Kinvi", initials: "JK" },
       { name: "Gloria", initials: "GL" },
     ],
-    description: "Rainforest Protectors works directly with indigenous communities to safeguard critical rainforest ecosystems. Through sustainable agroforestry and legal protection measures, we combat deforestation and preserve the vital carbon sinks of the Amazon."
+    description:
+      "Rainforest Protectors works directly with indigenous communities to safeguard critical rainforest ecosystems. Through sustainable agroforestry and legal protection measures, we combat deforestation and preserve the vital carbon sinks of the Amazon.",
   },
   {
     id: "h2ventures",
@@ -82,7 +83,8 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
       { name: "Joe Kinvi", initials: "JK" },
       { name: "Holger", initials: "HO" },
     ],
-    description: "H2O Pure Streams is committed to ensuring access to clean and safe drinking water. We implement sustainable water filtration systems and rainwater harvesting techniques in regions facing severe water scarcity and contamination."
+    description:
+      "H2O Pure Streams is committed to ensuring access to clean and safe drinking water. We implement sustainable water filtration systems and rainwater harvesting techniques in regions facing severe water scarcity and contamination.",
   },
   {
     id: "hoaq",
@@ -99,7 +101,8 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
       { name: "Folakemi Osho", initials: "FO" },
       { name: "J.", initials: "JO" },
     ],
-    description: "Wind Energy Co. develops and manages large-scale wind farms to harness the power of nature. Our projects are designed to maximize energy output while minimizing environmental impact, contributing significantly to the global renewable energy capacity."
+    description:
+      "Wind Energy Co. develops and manages large-scale wind farms to harness the power of nature. Our projects are designed to maximize energy output while minimizing environmental impact, contributing significantly to the global renewable energy capacity.",
   },
   {
     id: "kigo-collective",
@@ -116,7 +119,8 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
       { name: "MT", initials: "MT" },
       { name: "Stephen Kauma", initials: "SK" },
     ],
-    description: "The Agri-Eco Collective promotes sustainable farming practices that regenerate soil health and increase biodiversity. We train farmers in permaculture and organic agriculture to create resilient food systems that thrive in harmony with nature."
+    description:
+      "The Agri-Eco Collective promotes sustainable farming practices that regenerate soil health and increase biodiversity. We train farmers in permaculture and organic agriculture to create resilient food systems that thrive in harmony with nature.",
   },
   {
     id: "originative",
@@ -133,7 +137,8 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
       { name: "AA", initials: "AA" },
       { name: "Abeer Abu Shmeis", initials: "AS" },
     ],
-    description: "Carbon Zero Org is at the forefront of atmospheric carbon reduction. We invest in high-efficiency carbon capture technologies and natural sequestration projects to actively draw down legacy carbon emissions and stabilize the climate."
+    description:
+      "Carbon Zero Org is at the forefront of atmospheric carbon reduction. We invest in high-efficiency carbon capture technologies and natural sequestration projects to actively draw down legacy carbon emissions and stabilize the climate.",
   },
   {
     id: "pula-kollektive",
@@ -150,7 +155,8 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
       { name: "TM", initials: "TM" },
       { name: "Torti Ama-Njoku", initials: "TN" },
     ],
-    description: "Eco-Plastics Inc. pioneers the circular economy by transforming post-consumer waste into valuable raw materials. Our advanced recycling facilities divert thousands of tons of plastic from landfills and oceans every year."
+    description:
+      "Eco-Plastics Inc. pioneers the circular economy by transforming post-consumer waste into valuable raw materials. Our advanced recycling facilities divert thousands of tons of plastic from landfills and oceans every year.",
   },
   {
     id: "raise-by-borderless",
@@ -164,7 +170,8 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
     paymentModel: "Free",
     effort: 88,
     managers: [{ name: "Ecobond", initials: "EC" }],
-    description: "The Biodiversity Fund channels vital resources to conservation projects protecting the world's most endangered species. We support habitat restoration, anti-poaching initiatives, and community-led conservation efforts globally."
+    description:
+      "The Biodiversity Fund channels vital resources to conservation projects protecting the world's most endangered species. We support habitat restoration, anti-poaching initiatives, and community-led conservation efforts globally.",
   },
   {
     id: "realcorp-capital",
@@ -178,7 +185,8 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
     paymentModel: "Free",
     effort: 73,
     managers: [{ name: "Team", initials: "TM" }],
-    description: "Solar Power Arrays leverages cutting-edge photovoltaic technology to maximize the efficiency of solar energy capturing. We specialize in robust, high-yield solar installations for commercial and industrial applications."
+    description:
+      "Solar Power Arrays leverages cutting-edge photovoltaic technology to maximize the efficiency of solar energy capturing. We specialize in robust, high-yield solar installations for commercial and industrial applications.",
   },
   {
     id: "serengeti-angels",
@@ -192,7 +200,8 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
     paymentModel: "Paid",
     effort: 95,
     managers: [{ name: "Admin", initials: "AD" }],
-    description: "The Serengeti Preservation Network is dedicated to the long-term conservation of the iconic Serengeti ecosystem. Through a combination of research, advocacy, and community engagement, we strive to maintain the delicate balance of this natural wonder."
+    description:
+      "The Serengeti Preservation Network is dedicated to the long-term conservation of the iconic Serengeti ecosystem. Through a combination of research, advocacy, and community engagement, we strive to maintain the delicate balance of this natural wonder.",
   },
   {
     id: "ecosystem-commission",
@@ -206,6 +215,7 @@ export const MOCK_COLLECTIVES: CollectiveCardData[] = [
     paymentModel: "Paid",
     effort: 60,
     managers: [{ name: "Commission", initials: "EC" }],
-    description: "The Planet Restoration Comm. focuses on shaping comprehensive climate policies and driving actionable systemic changes. We collaborate with governments, businesses, and civil society to implement strategies for deep decarbonization and ecological repair."
+    description:
+      "The Planet Restoration Comm. focuses on shaping comprehensive climate policies and driving actionable systemic changes. We collaborate with governments, businesses, and civil society to implement strategies for deep decarbonization and ecological repair.",
   },
 ];
