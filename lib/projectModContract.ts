@@ -1,5 +1,5 @@
 export const projectModContract = {
-  address: "0x2237b3D8A43335F448C0b8E5749b6476c0957d26",
+  address: "0xA6c6D93C2c7393Eb91903eE5ed804c6350d1CBb0",
   abi: [
     {
       inputs: [{ internalType: "address", name: "_owner", type: "address" }],

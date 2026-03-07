@@ -8,16 +8,30 @@ import { CollectiveCard } from "@/components/projects/CollectiveCard";
 import { CollectiveList } from "@/components/projects/CollectiveList";
 import useProjects from "@/hooks/useProjects";
 import { transformNFTToCollective } from "@/lib/transformNFTToCollective";
+// import { useGetGreenImpact } from "@/hooks/useGetGreenImpact";
+import { useReadContract } from "wagmi";
+import { projectModContract } from "@/lib/projectModContract";
 
 export default function CollectivesPage() {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
   const { data, loading, error } = useProjects();
 
+  const greenImpact = useReadContract({
+    abi: projectModContract.abi,
+    address: projectModContract.address,
+    functionName: "getProjectScores",
+  });
+
+  console.log("Green Impact Scores:", greenImpact.data?.[0].greenImpact);
+
   // Transform API data to CollectiveCardData format
+
   const collectives = useMemo(() => {
     if (!data?.nfts) return [];
     return data.nfts.map(transformNFTToCollective);
   }, [data]);
+
+  console.log("Transformed Collectives:", collectives);
 
   return (
     <div className="min-h-screen bg-[#f5f5f5]">
@@ -53,8 +67,12 @@ export default function CollectivesPage() {
           <>
             {viewMode === "grid" ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {collectives.map((collective) => (
-                  <CollectiveCard key={collective.id} collective={collective} />
+                {collectives.map((collective, index) => (
+                  <CollectiveCard
+                    key={collective.id}
+                    collective={collective}
+                    greenImpact={greenImpact.data?.[index].greenImpact}
+                  />
                 ))}
               </div>
             ) : (

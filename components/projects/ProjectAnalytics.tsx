@@ -100,7 +100,7 @@ export function ProjectAnalytics() {
   });
 
   const stats = [
-    { label: "Total Projects", value: "14" },
+    { label: "Total Projects", value: "12" },
     { label: "Active Members", value: "1,234" },
     { label: "Total Volume", value: "$5.2M" },
   ];
