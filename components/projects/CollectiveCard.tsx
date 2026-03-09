@@ -48,8 +48,10 @@ function PaymentPill({ value }: { value: "Free" | "Paid" }) {
 
 export function CollectiveCard({
   collective,
+  greenImpact,
 }: {
   collective: CollectiveCardData;
+  greenImpact: any; // Adjust type as needed
 }) {
   return (
     <Dialog>
@@ -112,12 +114,10 @@ export function CollectiveCard({
           <div className="flex flex-col gap-1 mt-2">
             <div className="flex items-center justify-between text-[11px] text-gray-500 font-medium">
               <span>Sustainability Effort</span>
-              <span className="text-gray-900 font-bold">
-                {collective.effort}%
-              </span>
+              <span className="text-gray-900 font-bold">{greenImpact}%</span>
             </div>
             <Progress
-              value={collective.effort}
+              value={greenImpact}
               className="h-1.5 bg-gray-100 [&>div]:bg-[#d4a843]"
             />
           </div>
@@ -200,11 +200,11 @@ export function CollectiveCard({
               </span>
               <div className="flex items-center gap-2">
                 <Progress
-                  value={collective.effort}
+                  value={greenImpact}
                   className="h-2 flex-1 [&>div]:bg-[#d4a843]"
                 />
                 <span className="text-sm font-bold text-gray-900">
-                  {collective.effort}%
+                  {greenImpact}%
                 </span>
               </div>
             </div>
